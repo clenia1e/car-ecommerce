@@ -1,0 +1,10 @@
+.body{
+    @apply bg-slate-300;
+    @apply h-10;
+}
+.logo{
+    @apply font-bold;
+    @apply text-xl;
+    @apply pl-7; 
+    @apply pt-2;
+}
