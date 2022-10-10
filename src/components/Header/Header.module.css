@@ -1,0 +1,4 @@
+.headerContent {
+  @apply bg-white;
+  @apply h-auto;
+}
