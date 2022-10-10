@@ -1,6 +1,7 @@
 .body {
   @apply bg-slate-300;
-  @apply h-auto lg:h-10;
+  @apply h-auto;
+  @apply py-2 px-2;
   @apply items-center;
   @apply flex flex-col md:flex-row;
   @apply justify-between;
@@ -13,38 +14,16 @@
 .navLinksContent {
   @apply flex flex-row;
   @apply space-x-5;
-  @apply text-gray-600;
 }
 
 .loginContent {
   @apply flex flex-row;
   @apply space-x-5;
+  @apply font-inter;
 }
+
 .homeNav {
-  @apply hover:text-gray-900;
-  @apply hover:rounded-md;
-  @apply font-inter;
-}
-
-.aboutusInfo {
-  @apply hover:text-gray-900;
-  @apply hover:rounded-md;
-  @apply font-inter;
-}
-
-.PriceInfo {
-  @apply hover:text-gray-900;
-  @apply hover:rounded-md;
-  @apply font-inter;
-}
-
-.featuresInfo {
-  @apply hover:text-gray-900;
-  @apply hover:rounded-md;
-  @apply font-inter;
-}
-
-.contactInfo {
+  @apply text-gray-600;
   @apply hover:text-gray-900;
   @apply hover:rounded-md;
   @apply font-inter;
@@ -55,7 +34,6 @@
   @apply hover:bg-gray-900;
   @apply hover:text-white;
   @apply hover:rounded-md;
-  @apply font-inter;
 }
 
 .loginButton {
@@ -63,5 +41,4 @@
   @apply hover:bg-gray-900;
   @apply hover:text-white;
   @apply hover:rounded-md;
-  @apply font-inter;
 }
