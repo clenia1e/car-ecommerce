@@ -1,34 +1,35 @@
-import Link from "next/link";
 import React from "react";
-import Styles from "./NavBar.module.css" 
-const NavBar = () => {
+import Styles from "./NavBar.module.css";
 
-    return (
-        <>
-        <div className={Styles.body}>
-            <span className={Styles.logo}>
-            <Link href="/Home">JIMO</Link>
-            </span>
-            <div className={Styles.navLinksContent}>
-            <span className={Styles.homeNav}>
-            <Link href="/Home" >Home</Link>
-            </span>
-            <span className={Styles.aboutusInfo}>
-            <Link href="#" >AboutUs</Link>
-            </span>
-            <span className={Styles.PriceInfo}>
-            <Link href="#" >Pricing</Link>
-            </span>
-            <span className={Styles.featuresInfo}>
-            <Link href="#" >Features</Link>
-            </span>
-            <span className={Styles.contactInfo}>
-            <Link href="#" >Contact</Link>
-            </span>
-            </div>
-        </div>
-        </>
-    )
+type Link = {
+  label: string;
+  url: string;
+};
+
+interface Props {
+  linkList: Link[];
 }
+const NavBar: React.FC<Props> = ({ linkList }) => {
+  return (
+    <>
+      <nav className={Styles.body}>
+        <div className={Styles.logo}>
+          <a href="/Home">JIMO</a>
+        </div>
+        <ul className={Styles.navLinksContent}>
+          {linkList?.map(({ label, url }: Link) => (
+            <li key={label} className={Styles.homeNav}>
+              <a href={url}>{label}</a>
+            </li>
+          ))}
+        </ul>
+        <div className={Styles.loginContent}>
+          <button className={Styles.getStartButton}> Get Start</button>
+          <button className={Styles.loginButton}> Login </button>
+        </div>
+      </nav>
+    </>
+  );
+};
 
 export default NavBar;
