@@ -4,9 +4,9 @@ import Carousel from "../../components/Carousel";
 
 const Home = () => {
   const bannerUrl = [
-    { img: "f-1.png" },
-    { img: "f-1.png" },
-    { img: "f-1.png" },
+    { img: "porsche.jpeg" },
+    { img: "porsche.jpeg" },
+    { img: "porsche.jpeg" },
   ];
   return (
     <>
