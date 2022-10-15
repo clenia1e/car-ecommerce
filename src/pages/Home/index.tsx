@@ -1,12 +1,17 @@
 import React from "react";
-import Styles from "./Home.module.css";
 import Header from "../../components/Header";
+import Carousel from "../../components/Carousel";
 
 const Home = () => {
+  const bannerUrl = [
+    { img: "porsche.jpeg" },
+    { img: "porsche.jpeg" },
+    { img: "porsche.jpeg" },
+  ];
   return (
     <>
       <Header />
-      <div className={Styles.test} />
+      <Carousel bannerUrl={bannerUrl} />
     </>
   );
 };

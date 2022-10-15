@@ -1,0 +1,10 @@
+.carouselContainer {
+  @apply h-auto;
+  @apply bg-white;
+}
+.carouselContent {
+  @apply bg-white;
+  @apply flex;
+  @apply justify-center;
+  @apply relative;
+}
