@@ -10,7 +10,7 @@ interface Props {
   bannerUrl: BannerUrl[];
 }
 
-const Carrossel: React.FC<Props> = ({ bannerUrl }) => {
+const Carousel: React.FC<Props> = ({ bannerUrl }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -30,4 +30,4 @@ const Carrossel: React.FC<Props> = ({ bannerUrl }) => {
     </div>
   );
 };
-export default Carrossel;
+export default Carousel;
