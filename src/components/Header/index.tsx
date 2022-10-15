@@ -1,7 +1,6 @@
 import React from "react";
 import Styles from "./Header.module.css";
 import NavBar from "../NavBar";
-import Home from "../../pages/Home";
 
 const Header = () => {
   const linkList = [
