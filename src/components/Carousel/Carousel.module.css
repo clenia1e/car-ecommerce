@@ -1,6 +1,7 @@
 .carouselContainer {
   @apply h-auto;
   @apply bg-white;
+  @apply w-full;
 }
 .carouselContent {
   @apply bg-white;

@@ -4,6 +4,7 @@ import Slider from "react-slick";
 
 type BannerUrl = {
   img: string;
+  name: string;
 };
 
 interface Props {
@@ -13,6 +14,7 @@ interface Props {
 const Carousel: React.FC<Props> = ({ bannerUrl }) => {
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -21,9 +23,9 @@ const Carousel: React.FC<Props> = ({ bannerUrl }) => {
   return (
     <div className={Styles.carouselContainer}>
       <Slider {...settings} className={Styles.carouselContent}>
-        {bannerUrl?.map((img: BannerUrl) => (
-          <div>
-            <img src={img.img} width="100%" alt="porscheBanner" />
+        {bannerUrl?.map(({ name, img }: BannerUrl) => (
+          <div key={name}>
+            <img src={img} width="100%" alt="porscheBanner" />
           </div>
         ))}
       </Slider>
