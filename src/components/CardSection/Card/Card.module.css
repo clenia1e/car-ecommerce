@@ -1,0 +1,11 @@
+.containerCard {
+  @apply mt-14;
+  @apply h-44 w-44;
+  @apply bg-gray-100;
+  @apply rounded-lg;
+  @apply cursor-pointer;
+  @apply duration-300;
+}
+.containerCard:hover {
+  @apply h-48 w-48;
+}

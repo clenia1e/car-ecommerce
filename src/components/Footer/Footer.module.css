@@ -1,9 +1,9 @@
 .container {
   @apply bg-black;
-  @apply h-72;
+  @apply h-60;
   @apply mt-11;
   @apply w-full;
-  @apply fixed bottom-0;
+  @apply sticky bottom-0;
   @apply text-white;
   @apply inline-grid grid-cols-3 gap-3;
   @apply pt-16;
