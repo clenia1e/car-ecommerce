@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/Header";
 import Carousel from "../../components/Carousel";
 import Footer from "../../components/Footer";
+import CardSection from "../../components/CardSection";
 
 const Home = () => {
   const bannerUrl = [
@@ -41,6 +42,26 @@ const Home = () => {
       links: linksAbout,
     },
   ];
+  const cardetail = [
+    {
+      name: "firstImage",
+      img: "car1.jpeg",
+      carname: "Porsche",
+      detail: "the best car",
+    },
+    {
+      name: "secondImage",
+      img: "car2.jpeg",
+      carname: "Porsche",
+      detail: "the best car",
+    },
+    {
+      name: "thirdImage",
+      img: "car3.jpeg",
+      carname: "Porsche",
+      detail: "the best car",
+    },
+  ];
 
   return (
     <div>
@@ -48,6 +69,7 @@ const Home = () => {
       <div>
         <Carousel bannerUrl={bannerUrl} />
       </div>
+      <CardSection cardetail={cardetail} />
       <Footer categories={categoryList} />
     </div>
   );

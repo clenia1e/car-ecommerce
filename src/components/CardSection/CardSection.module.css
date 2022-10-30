@@ -1,0 +1,5 @@
+.contentCardList {
+  @apply flex content-center space-x-24 flex-col;
+  @apply ml-20;
+  @apply md:flex-row;
+}
