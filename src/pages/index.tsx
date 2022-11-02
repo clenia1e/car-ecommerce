@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../Header";
-import Carousel from "../Carousel";
-import Footer from "../Footer";
-import CardSection from "../CardSection";
+import Header from "../components/Header";
+import Carousel from "../components/Carousel";
+import Footer from "../components/Footer";
+import CardSection from "../components/CardSection";
 import Styles from "./Home.module.css";
 
 const Home = () => {
