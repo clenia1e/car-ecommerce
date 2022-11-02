@@ -1,0 +1,4 @@
+.bodyContent {
+  @apply w-full;
+  @apply min-h-screen;
+}

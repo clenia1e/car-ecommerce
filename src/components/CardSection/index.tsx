@@ -5,8 +5,6 @@ import Styles from "./CardSection.module.css";
 type CardDetails = {
   name: string;
   img: string;
-  carname: string;
-  detail: string;
 };
 
 interface Props {
@@ -16,11 +14,9 @@ const CardSection: React.FC<Props> = ({ cardetail }) => {
   return (
     <>
       <div className={Styles.contentCardList}>
-        {cardetail?.map(({ name, img, carname, detail }: CardDetails) => (
+        {cardetail?.map(({ name, img }: CardDetails) => (
           <Card key={name}>
-            <img src={img} alt="" />
-            <h1>{carname}</h1>
-            <p>{detail}</p>
+            <img className={Styles.imgContent} src={img} alt="" />
           </Card>
         ))}
       </div>

@@ -1,8 +1,9 @@
 import React from "react";
-import Header from "../../components/Header";
-import Carousel from "../../components/Carousel";
-import Footer from "../../components/Footer";
-import CardSection from "../../components/CardSection";
+import Header from "../components/Header";
+import Carousel from "../components/Carousel";
+import Footer from "../components/Footer";
+import CardSection from "../components/CardSection";
+import Styles from "./Home.module.css";
 
 const Home = () => {
   const bannerUrl = [
@@ -46,20 +47,14 @@ const Home = () => {
     {
       name: "firstImage",
       img: "car1.jpeg",
-      carname: "Porsche",
-      detail: "the best car",
     },
     {
       name: "secondImage",
       img: "car2.jpeg",
-      carname: "Porsche",
-      detail: "the best car",
     },
     {
       name: "thirdImage",
       img: "car3.jpeg",
-      carname: "Porsche",
-      detail: "the best car",
     },
   ];
 
@@ -69,8 +64,12 @@ const Home = () => {
       <div>
         <Carousel bannerUrl={bannerUrl} />
       </div>
-      <CardSection cardetail={cardetail} />
-      <Footer categories={categoryList} />
+      <div className={Styles.bodyContent}>
+        <CardSection cardetail={cardetail} />
+      </div>
+      <div>
+        <Footer categories={categoryList} />
+      </div>
     </div>
   );
 };
