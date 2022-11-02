@@ -1,5 +1,15 @@
 .contentCardList {
-  @apply flex content-center space-x-24 flex-col;
-  @apply ml-20;
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply sm:items-center;
+  @apply items-center;
+  @apply gap-24;
   @apply md:flex-row;
+}
+
+.imgContent {
+  @apply w-96;
+  @apply h-64;
+  @apply rounded-md;
 }
